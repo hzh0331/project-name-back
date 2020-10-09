@@ -16,6 +16,7 @@ public class TestController {
     @CrossOrigin
     @GetMapping("/test")
     public Test getTest(@Param("test") String test){
+        System.out.println("aaaaaaaa");
         return testService.getTest(test);
     }
 }
